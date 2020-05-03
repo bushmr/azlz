@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "hubvNetName": {
+      "type": "string",
+      "metadata": {
+        "description": "Set the Hub VNet name"
+      }
+    },
+    "workvNetName": {
+      "type": "string",
+      "metadata": {
+        "description": "Set the work VNet name"
+      }
+    },
+     "hubRGname": {
+       "type": "string",
+       "metadata": {
+         "description": "HUB resource group name"
+       }
+     },
+     "workRGname": {
+       "type": "string",
+       "metadata": {
+         "description": "work resource group name"
+       }
+     }
+  },
+  "variables": {
+  },
+  "resources": [
+    {
+      "name": "[concat(parameters('workvNetName'), '/peer-to-', parameters('hubvNetName'))]",
+      "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+      "apiVersion": "2017-06-01",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "allowVirtualNetworkAccess": true,
+        "allowForwardedTraffic": false,
+        "allowGatewayTransit": false,
+        "useRemoteGateways": false,
+        "remoteVirtualNetwork": {
+          "id": "[concat(subscription().id, '/resourceGroups/', parameters('hubRGname'), '/providers/Microsoft.Networks/virtualNetworks/', parameters('hubVnetName') )]"
+        }
+      }
+    }
+    
+  ]
+}

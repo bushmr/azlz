@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southcentralus"
+        },
+        "networkInterfaceName": {
+            "value": "nic-jump-prod-001"
+        },
+        "subnetName": {
+            "value": "vnet-intdmz-001"
+        },
+        "virtualNetwork": {
+            "value": "vnet-hub-prod-001"
+        },
+        "virtualMachineName": {
+            "value": "vm-jumpwinp-001"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1ls"
+        },
+        "adminUsername": {
+            "value": "zadmin"
+        },
+        "adminPassword": {
+            "value": null
+            },
+        "diagnosticsStorageAccountName": {
+            "value": ""
+        }
+  }
+}

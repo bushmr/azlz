@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Network/applicationGateways",
+            "apiVersion":"2019-11-01",
+            "name": "agw-workload-prod-001",
+            "location": "[parameters('location')]",
+            "properties": {
+                "sku": {
+                    
+                }
+
+            }
+        }
+    ]
+}

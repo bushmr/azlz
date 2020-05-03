@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "hubRG": {
+        "value": "rg-hub"
+      },
+      "coreRG": {
+        "value": "rg-core"
+      },
+      "workRG": {
+        "value": "rg-workload"
+      },
+      "webRG": {
+        "value": "rg-web"
+      },
+      "bizRG": {
+        "value": "rg-biz"
+      },
+      "dataRG": {
+        "value": "rg-data"
+      },
+      "whichLoc": {
+        "value": "southcentralus"
+      }
+  }
+}

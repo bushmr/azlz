@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "bastion-host-name": {
+          "value": "bh-hub-prod"
+      },
+        "vnet-name": {
+          "value": "vnet-hub-prod-001"
+        },
+        "vnet-ip-prefix": {
+          "value": "10.0.0.0/16"
+        },
+        "bastion-subnet-ip-prefix": {
+          "value": "10.0.253.0/27"
+        },
+        "location": {
+          "value": "southcentralus"
+      }
+    }
+  }

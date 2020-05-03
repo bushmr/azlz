@@ -1,0 +1,99 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+     "hubRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for network shared services"
+         }
+      },
+     "coreRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for core services"
+         }
+      },
+     "workRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for workload vnet"
+         }
+      },
+     "webRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for web workloads"
+         }
+      },
+     "bizRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for business workloads"
+         }
+      },
+     "dataRG": {
+         "type": "string",
+         "metadata": {
+             "description": "Resource Group for data & database workloads"
+         }
+      },
+      "whichLoc": {
+          "type": "string",
+          "metadata": {
+            "description": "Which location to deploy RGs"
+          }
+      }
+    },
+  "variables": { },
+  "resources": [ 
+  {
+            "name": "[parameters('hubRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        },
+  {
+            "name": "[parameters('coreRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        },
+  {
+            "name": "[parameters('workRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        },
+  {
+            "name": "[parameters('webRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        },
+  {
+            "name": "[parameters('bizRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        },
+  {
+            "name": "[parameters('dataRG')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('whichLoc')]",
+            "tags": {},
+            "properties": {}
+        }
+   ]
+}

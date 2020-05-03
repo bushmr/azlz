@@ -1,0 +1,18 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vnetName": {
+      "value": "vnet-work-prod-001"
+    },
+    "vnetAddressPrefix": {
+      "value": "10.2.0.0/16"
+    },
+    "subnet1Name": {
+      "value": "vnet-web-001"
+    },
+    "subnet1Prefix": {
+      "value": "10.2.0.0/24"
+    }
+  }
+}

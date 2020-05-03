@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southcentralus"
+        },
+        "name": {
+            "value": "gw-vpn-prod-001"
+        },
+        "sku": {
+            "value": "VpnGw1"
+        },
+        "gatewayType": {
+            "value": "Vpn"
+        },
+        "vpnType": {
+            "value": "RouteBased"
+        },
+        "vpnGatewayGeneration": {
+            "value": "Generation1"
+        },
+        "resGroup": {
+            "value": "rg-netsharedsvc-prod"
+        },
+        "vnet": {
+            "value": "vnet-hub-prod-001"
+        },
+        "publicIP": {
+            "value": "pip-vnetgw-hub-prod-001"
+        }
+    }
+}
