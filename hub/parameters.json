@@ -6,40 +6,38 @@
       "value": "vnet-hub-prod-001"
     },
     "vnetAddressPrefix": {
-      "value": ["10.0.0.0/16",
-                "172.16.0.0/16",
-                "192.168.0.0/16"
+      "value": ["10.254.0.0/16"
               ]
     },
     "subnet1Name": {
       "value": "vnet-extdmz-001"
     },
     "subnet1Prefix": {
-      "value": "172.16.1.0/24"
+      "value": "10.254.0.0/24"
     },
     "subnet2Name": {
       "value": "vnet-intdmz-001"
     },
     "subnet2Prefix": {
-      "value": "10.0.1.0/24"
+      "value": "10.254.1.0/24"
     },
     "gatewaySubnet": {
       "value": "GatewaySubnet"
     },
     "gatewaySubnetPrefix": {
-      "value": "10.0.254.0/27"
+      "value": "10.254.2.0/24"
     },
     "bastionSubnet": {
       "value": "AzureBastionSubnet"
     },
     "bastionSubnetPrefix": {
-      "value": "10.0.253.0/27"
+      "value": "10.254.3.0/24"
   },
     "AzureFirewallSubnet": {
       "value": "AzureFirewallSubnet"
     },
     "AzureFirewallSubnetPrefix": {
-      "value": "10.0.251.0/24"
+      "value": "10.254.4.0/24"
   }
  }
 }
