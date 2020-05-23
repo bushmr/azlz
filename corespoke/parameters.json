@@ -6,13 +6,13 @@
             "value": "vnet-core-prod-001"
         },
         "addressPrefix": {
-            "value": "10.3.0.0/16"
+            "value": "10.1.0.0/16"
         },
         "subnetName": {
             "value": "snet-coresvc-001"
         },
         "subnetAddressPrefix": {
-            "value": "10.3.0.0/24"
+            "value": "10.1.0.0/24"
         },
         "enableDdosProtection": {
             "value": false

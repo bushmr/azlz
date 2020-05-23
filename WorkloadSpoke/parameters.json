@@ -9,7 +9,7 @@
       "value": "10.2.0.0/16"
     },
     "subnet1Name": {
-      "value": "vnet-web-001"
+      "value": "snet-web-001"
     },
     "subnet1Prefix": {
       "value": "10.2.0.0/24"

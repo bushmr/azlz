@@ -10,13 +10,13 @@
               ]
     },
     "subnet1Name": {
-      "value": "vnet-extdmz-001"
+      "value": "snet-extdmz-001"
     },
     "subnet1Prefix": {
       "value": "10.254.0.0/24"
     },
     "subnet2Name": {
-      "value": "vnet-intdmz-001"
+      "value": "snet-intdmz-001"
     },
     "subnet2Prefix": {
       "value": "10.254.1.0/24"
