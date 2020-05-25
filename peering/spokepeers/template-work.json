@@ -19,12 +19,6 @@
        "metadata": {
          "description": "HUB resource group name"
        }
-     },
-     "workRGname": {
-       "type": "string",
-       "metadata": {
-         "description": "work resource group name"
-       }
      }
   },
   "variables": {

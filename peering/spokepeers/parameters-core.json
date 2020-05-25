@@ -10,9 +10,6 @@
       },
       "hubRGname": {
         "value": "rg-hub"
-      },
-      "coreRGname": {
-        "value": "rg-core"
       }
    }
 }
