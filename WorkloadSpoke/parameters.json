@@ -8,11 +8,23 @@
     "vnetAddressPrefix": {
       "value": "10.2.0.0/16"
     },
-    "subnet1Name": {
+    "webSubName": {
       "value": "snet-web-001"
     },
-    "subnet1Prefix": {
+    "webSubPrefix": {
       "value": "10.2.0.0/24"
+    },
+    "bizSubName": {
+      "value": "snet-biz-001"
+    },
+    "bizSubPrefix": {
+      "value": "10.2.1.0/24"
+    },
+    "dataSubName": {
+      "value": "snet-data-001"
+    },
+    "dataSubPrefix": {
+      "value": "10.2.2.0/24"
     }
   }
 }
