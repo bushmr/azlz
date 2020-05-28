@@ -19,14 +19,39 @@
       "type": "string",
       "defaultValue": "10.2.0.0/24",
       "metadata": {
-        "description": "Subnet 1 Prefix"
+        "description": "Web Subnet Prefix"
       }
     },
     "webSubName": {
       "type": "string",
-      "defaultValue": "snet-work-001",
+      "defaultValue": "snet-web-001",
       "metadata": {
-        "description": "Subnet 1 Name"
+        "description": "Web Subnet Name"
+      }
+    },
+    "bizSubPrefix": {
+      "type": "string",
+      "defaultValue": "10.2.1.0/24",
+      "metadata": {
+        "description": "business Subnet Prefix"
+      }
+    },
+    "bizSubName": {
+      "type": "string",
+      "defaultValue": "snet-biz-001"
+    },
+    "dataSubPrefix": {
+      "type": "string",
+      "defaultValue": "10.2.2.0/24",
+      "metadata": {
+        "description": "database Subnet Prefix"
+      }    
+    },
+    "dataSubName": {
+      "type": "string",
+      "defaultValue": "snet-data-001",
+      "metadata": {
+        "description": "database Subnet Name"
       }
     }
   },
