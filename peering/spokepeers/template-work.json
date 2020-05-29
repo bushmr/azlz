@@ -33,7 +33,7 @@
         "allowVirtualNetworkAccess": true,
         "allowForwardedTraffic": false,
         "allowGatewayTransit": false,
-        "useRemoteGateways": false,
+        "useRemoteGateways": true,
         "remoteVirtualNetwork": {
           "id": "[concat(subscription().id, '/resourceGroups/', parameters('hubRGname'), '/providers/Microsoft.Networks/virtualNetworks/', parameters('hubVnetName') )]"
         }
