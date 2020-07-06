@@ -94,6 +94,21 @@
             "location": "[parameters('location')]",
             "tags": {},
             "properties": {}
-        }    
+        },
+   {
+       "name": "HubDeploy",
+       "type": "Microsoft.Resources/deployments",
+       "apiVersion": "2019-05-01",
+       "location": "[parameters('location')]",
+       "properties": {
+           "mode": "Incremental",
+           "templateLink": {
+               "uri": "https://raw.githubusercontent.com/bushmr/azlz/master/hub/template.json"
+           },
+           "parametersLink": { 
+               "uri": "https://raw.githubusercontent.com/bushmr/azlz/master/hub/parameters.json"
+           }
+       }
+   }
    ]
 }

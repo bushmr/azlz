@@ -20,7 +20,7 @@
       "dataRG": {
         "value": "rg-data"
       },
-      "whichLoc": {
+      "location": {
         "value": "southcentralus"
       }
   }

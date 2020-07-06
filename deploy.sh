@@ -17,10 +17,12 @@ DEP="/usr/bin/az deployment"
 $DEP sub create --location $1 --template-file template.json --parameters parameters.json 
 
 #Knock em down
-for i in hub peering core workload 
+for i in hub core workload 
 do 
     $DEP group create --name "$i" --resource-group "rg-$i" --template-file $i/template.json --parameters $i/parameters.json 
 done 
+
+
 
 
 
