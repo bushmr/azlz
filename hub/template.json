@@ -85,7 +85,7 @@
     },
     "location": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]",
+      "defaultValue": "southcentralus",
       "metadata": {
         "description": "Location for all resources."
       }

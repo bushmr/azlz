@@ -38,6 +38,9 @@
     },
     "AzureFirewallSubnetPrefix": {
       "value": "10.254.4.0/24"
+  },
+  "location": {
+    "value": "string"
   }
  }
 }
